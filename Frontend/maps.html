@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Google Map</title>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8gdI2sHtDHuo1ZX8Jur8G7dHyN_mj5wQ&callback=initMap"></script>
+      <script>
+            // Initialize and display the map
+            function initMap() {
+                  // Define the coordinates for the map center
+                  var myLatLng = { lat: 51.5074, lng: -0.1278 }; // Example coordinates (London)
+
+                  // Create a new map centered at the specified coordinates
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 10, // Adjust the initial zoom level
+                  center: myLatLng,
+                  mapTypeId: 'satellite' // Set the map type to satellite
+                  });
+
+                  // You can add markers, polygons, etc., to the map here
+            }
+      </script>
+</head>
+<body>
+      <!-- The div element to hold the map -->
+      <div id="map" style="height: 400px;"></div>
+
+      <!-- Call the initMap function to initialize the map -->
+      <script>
+            initMap();
+      </script>
+</body>
+</html>
