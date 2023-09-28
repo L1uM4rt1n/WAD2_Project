@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome"/>
+  <HelloWorld msg="Welcome everybody to our WAD2 Project, from here you will see a conflict pop-up soon. Enjoy!!"/>
 </template>
 
 <script>
